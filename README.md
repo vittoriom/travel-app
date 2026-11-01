@@ -34,9 +34,14 @@ Then open `http://localhost:8080` in your browser.
 ## Deployment
 
 ### GitHub Pages
-1. Go to **Settings > Pages** in the `vittoriom/travel-app` repository on GitHub.
-2. Select the `main` branch and `/ (root)` folder.
-3. Save to deploy automatically.
+
+This repository is configured for automated deployment to GitHub Pages via GitHub Actions:
+
+1. In GitHub, go to your repository **Settings > Pages**.
+2. Under **Build and deployment > Source**, select **GitHub Actions**.
+3. Every push to the `main` branch will automatically trigger the [deploy.yml](.github/workflows/deploy.yml) workflow and publish the site.
+
+The site is also fully compatible with legacy branch deployment (Source: *Deploy from a branch* -> Branch: `main`, Folder: `/ (root)`). A `.nojekyll` file is included in the root to ensure all static assets are served properly.
 
 ## License
 
