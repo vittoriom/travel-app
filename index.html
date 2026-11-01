@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Travel Companion — Local-first AI travel intelligence platform and on-the-road dynamic concierge. Macro-planning, dish-first regional gastronomy, hard-anchor scheduling, and seamless FindPenguins export." data-i18n="meta-desc">
+  <title data-i18n="meta-title">Travel Companion — Intelligent Travel Planning & On-The-Road Concierge</title>
+  
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Travel Companion — Intelligent Travel Planning & Concierge">
+  <meta property="og:description" content="Local-first AI travel intelligence platform from initial inspiration to on-the-road dynamic execution and FindPenguins handover.">
+  <meta property="og:image" content="assets/icon.png">
+
+  <!-- Favicons & Icons -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  <!-- Typography: Plus Jakarta Sans, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Background Accents -->
+  <div class="bg-ambient">
+    <div class="glow-orb glow-1"></div>
+    <div class="glow-orb glow-2"></div>
+    <div class="glow-orb glow-3"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="#" class="brand-link">
+        <img src="assets/logo.png" alt="Travel Companion Logo" class="brand-logo" width="34" height="34">
+        <span class="brand-name">Travel Companion</span>
+        <span class="brand-tag">macOS</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#features" class="nav-link" data-i18n="nav-features">Features</a>
+        <a href="#sandbox" class="nav-link" data-i18n="nav-sandbox">Live Demo</a>
+        <a href="#mcp" class="nav-link" data-i18n="nav-mcp">CLI & MCP</a>
+        <a href="#compare" class="nav-link" data-i18n="nav-compare">Compare</a>
+        <a href="#install" class="nav-link" data-i18n="nav-install">Install Guide</a>
+        <a href="#faq" class="nav-link" data-i18n="nav-faq">FAQ</a>
+        <a href="https://github.com/vittoriom/travel" target="_blank" rel="noopener noreferrer" class="nav-link">
+          GitHub ↗
+        </a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language Switcher (EN / IT) -->
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+          <button class="lang-btn" data-lang="it" aria-label="Italiano">IT</button>
+        </div>
+
+        <!-- Dark/Light Theme Toggle -->
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <span class="theme-icon">☀️</span>
+        </button>
+
+        <!-- Download Action Button -->
+        <a id="nav-download-btn" href="https://github.com/vittoriom/travel/releases/latest" class="btn btn-primary btn-sm" data-i18n="nav-download">
+          Download DMG
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle Navigation Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-badge" data-i18n="hero-badge">
+        🧭 100% Local-First • Model-Agnostic AI • FindPenguins Handover
+      </div>
+
+      <h1 class="hero-title" data-i18n="hero-title">
+        Intelligent Travel Planning & Concierge.<br>
+        <span class="gradient-text">From Inspiration to On-The-Road Execution.</span>
+      </h1>
+
+      <p class="hero-subtitle" data-i18n="hero-subtitle">
+        Close the gap between initial trip ideas and real-world execution. AI macro-planning, dish-first regional food dossiers, fluid daily schedules with locked hard anchors, dynamic rain/fatigue pivots, and one-click FindPenguins GPX/KML export.
+      </p>
+
+      <div class="hero-cta-group">
+        <a id="hero-download-btn" href="https://github.com/vittoriom/travel/releases/latest" class="btn btn-primary btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span data-i18n="hero-download">Download for macOS</span>
+        </a>
+
+        <a href="#sandbox" class="btn btn-secondary btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+          </svg>
+          <span data-i18n="hero-demo">Try Interactive Demo</span>
+        </a>
+      </div>
+
+      <div id="hero-version-text" class="hero-release-info" data-i18n="hero-version">
+        Latest Release: v0.2.0 • macOS 13+ (Universal Apple Silicon & Intel)
+      </div>
+
+      <!-- Quick Stats Bar -->
+      <div class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-number" data-i18n="stat-speed">0ms Cloud Latency</div>
+          <div class="stat-label" data-i18n="stat-speed-sub">100% Local-first storage</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-i18n="stat-lifecycle">5 Phases Covered</div>
+          <div class="stat-label" data-i18n="stat-lifecycle-sub">Inspiration to FindPenguins</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-i18n="stat-food">Dish-First Intel</div>
+          <div class="stat-label" data-i18n="stat-food-sub">Regional cuisine & etiquette</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-i18n="stat-ai">Model-Agnostic AI</div>
+          <div class="stat-label" data-i18n="stat-ai-sub">BYOK OpenRouter, Claude & MCP</div>
+        </div>
+      </div>
+
+      <!-- Authentic App Window Mockup -->
+      <div class="mockup-wrapper">
+        <div class="macos-window">
+          <!-- Window Titlebar -->
+          <div class="window-titlebar">
+            <div class="traffic-lights">
+              <span class="traffic-light traffic-close"></span>
+              <span class="traffic-light traffic-min"></span>
+              <span class="traffic-light traffic-max"></span>
+            </div>
+            <div class="window-title-text" data-i18n="mockup-title">
+              Travel Companion — Japan Autumn Odyssey (Tokyo • Kyoto • Osaka)
+            </div>
+            <div class="window-pills">
+              <span class="pill-active" data-i18n="mockup-badge-active">Trip Active</span>
+            </div>
+          </div>
+
+          <!-- Window Inner Content -->
+          <div class="window-content">
+            <!-- Sidebar Navigation -->
+            <aside class="mockup-sidebar">
+              <div class="sidebar-group-title" data-i18n="mockup-nav-trips">MY TRIPS</div>
+              <div class="sidebar-nav-item active">
+                <span>🇯🇵</span>
+                <span data-i18n="mockup-trip-1">Japan Autumn Odyssey</span>
+              </div>
+              <div class="sidebar-nav-item">
+                <span>🇮🇹</span>
+                <span data-i18n="mockup-trip-2">Amalfi & Cilento Coast</span>
+              </div>
+              <div class="sidebar-nav-item">
+                <span>🇮🇸</span>
+                <span data-i18n="mockup-trip-3">Iceland Ring Road</span>
+              </div>
+
+              <div class="sidebar-group-title" style="margin-top: 14px;" data-i18n="mockup-nav-phases">LIFECYCLE PHASES</div>
+              <div class="sidebar-nav-item">
+                <span>🧭</span>
+                <span data-i18n="mockup-phase-1">1. Macro-Planning</span>
+              </div>
+              <div class="sidebar-nav-item">
+                <span>🍜</span>
+                <span data-i18n="mockup-phase-2">2. Culture & Gastronomy</span>
+              </div>
+              <div class="sidebar-nav-item active">
+                <span>📅</span>
+                <span data-i18n="mockup-phase-3">3. Daily Itinerary</span>
+              </div>
+              <div class="sidebar-nav-item">
+                <span>🛟</span>
+                <span data-i18n="mockup-phase-4">4. On-The-Road Concierge</span>
+              </div>
+              <div class="sidebar-nav-item">
+                <span>🐧</span>
+                <span data-i18n="mockup-phase-5">5. FindPenguins Export</span>
+              </div>
+            </aside>
+
+            <!-- Main Canvas -->
+            <main class="mockup-main">
+              <div class="mockup-toolbar">
+                <div class="mockup-day-badge" data-i18n="mockup-day-selector">
+                  Day 3: Kyoto Cultural Heart & Gion
+                </div>
+                <div class="mockup-day-pacing">
+                  Pacing: Balanced Explorer (4 Clusters)
+                </div>
+              </div>
+
+              <div class="mockup-grid-layout">
+                <!-- Daily Schedule List -->
+                <div class="mockup-timeline">
+                  <!-- Morning -->
+                  <div class="timeline-card">
+                    <div class="timeline-meta">
+                      <span class="timeline-time" data-i18n="mockup-slot-morning">Morning • 09:00 - 12:30</span>
+                      <span class="badge-flexible" style="font-size:11px; color:var(--text-muted);">Flexible Cluster</span>
+                    </div>
+                    <div class="timeline-title" data-i18n="mockup-slot-morning-title">Fushimi Inari Taisha (Upper Mountain Path)</div>
+                    <div class="timeline-desc" data-i18n="mockup-slot-morning-desc">
+                      Early climb through the Senbon Torii before tour buses arrive. Peaceful side shrine paths and cedar forest views.
+                    </div>
+                  </div>
+
+                  <!-- Lunch [LOCKED HARD ANCHOR] -->
+                  <div class="timeline-card locked">
+                    <div class="timeline-meta">
+                      <span class="timeline-time" data-i18n="mockup-slot-lunch">Lunch • 13:00 - 14:30</span>
+                      <span class="badge-locked" data-i18n="mockup-anchor-locked">🔒 LOCKED ANCHOR</span>
+                    </div>
+                    <div class="timeline-title" data-i18n="mockup-slot-lunch-title">Gion Karyo — Traditional Kaiseki Lunch</div>
+                    <div class="timeline-desc" data-i18n="mockup-slot-lunch-desc">
+                      Multi-course seasonal Kyoto ryori. Counter seating overlooking the private moss garden. Confirmed table reservation.
+                    </div>
+                  </div>
+
+                  <!-- Afternoon -->
+                  <div class="timeline-card">
+                    <div class="timeline-meta">
+                      <span class="timeline-time" data-i18n="mockup-slot-afternoon">Afternoon • 15:00 - 18:00</span>
+                      <span class="badge-flexible" style="font-size:11px; color:var(--text-muted);">Flexible Cluster</span>
+                    </div>
+                    <div class="timeline-title" data-i18n="mockup-slot-afternoon-title">Kiyomizu-dera & Sannenzaka Historic District</div>
+                    <div class="timeline-desc" data-i18n="mockup-slot-afternoon-desc">
+                      Wooden stage overlooking maple canopy, followed by pottery shopping along preserved stone stairways.
+                    </div>
+                  </div>
+
+                  <!-- Evening -->
+                  <div class="timeline-card">
+                    <div class="timeline-meta">
+                      <span class="timeline-time" data-i18n="mockup-slot-evening">Evening • 19:30 - 22:00</span>
+                      <span class="badge-flexible" style="font-size:11px; color:var(--text-muted);">Flexible Cluster</span>
+                    </div>
+                    <div class="timeline-title" data-i18n="mockup-slot-evening-title">Pontocho Alley & Kamogawa Riverfront</div>
+                    <div class="timeline-desc" data-i18n="mockup-slot-evening-desc">
+                      Atmospheric evening stroll through pedestrian lantern alleys, artisanal craft sake and grilled yakitori.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Concierge On-The-Road Panel -->
+                <div class="mockup-concierge-panel">
+                  <div class="concierge-header">
+                    <div class="concierge-title" data-i18n="mockup-drawer-title">Concierge On-The-Road</div>
+                    <span class="concierge-pivot-pill" data-i18n="mockup-drawer-badge">Rain Pivot Ready</span>
+                  </div>
+
+                  <div class="concierge-pill-card">
+                    <div class="concierge-pill-title" data-i18n="mockup-drawer-pill-title">🏛️ Cultural Curiosity: Kiyomizu Wooden Tenons</div>
+                    <div class="concierge-pill-desc" data-i18n="mockup-drawer-pill-desc">
+                      The main hall's wooden veranda stands 13 meters above the hillside constructed without using a single nail (kigumi joinery).
+                    </div>
+                  </div>
+
+                  <div class="concierge-quick-actions">
+                    <button class="concierge-mini-btn">🌧️ Rain Pivot</button>
+                    <button class="concierge-mini-btn">⚡ Fatigue Save</button>
+                    <button class="concierge-mini-btn">🥢 Eat Nearby</button>
+                    <button class="concierge-mini-btn">🐧 GPX Export</button>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Features Section -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" data-i18n="features-badge">Engineered for Travellers</div>
+        <h2 class="section-title" data-i18n="features-title">Bridging The Entire Travel Decision Lifecycle</h2>
+        <p class="section-subtitle" data-i18n="features-subtitle">
+          Most apps leave you alone when planning, or overwhelm you with rigid spreadsheets. Travel Companion guides you from the very first spark to the final footprint export.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1: Macro-Planning -->
+        <div class="feature-card">
+          <div class="feature-icon-box">🧭</div>
+          <h3 class="feature-title" data-i18n="feat-macro-title">Macro-Planning & Pacing Archetypes</h3>
+          <p class="feature-desc" data-i18n="feat-macro-desc">
+            Input any destination and get 2-5 distinct travel archetypes with strategic duration, base lodging rationales, and neighborhood logistics calculated around realistic walking speeds.
+          </p>
+        </div>
+
+        <!-- Feature 2: Gastronomy -->
+        <div class="feature-card">
+          <div class="feature-icon-box">🍜</div>
+          <h3 class="feature-title" data-i18n="feat-gastro-title">Dish-First Gastronomy & Culture Dossier</h3>
+          <p class="feature-desc" data-i18n="feat-gastro-desc">
+            Avoid tourist traps with authentic regional dish registries. Learn what to order, unwritten restaurant customs, peak-hour reservation tactics, and local etiquette before you arrive.
+          </p>
+        </div>
+
+        <!-- Feature 3: Daily Anchors -->
+        <div class="feature-card">
+          <div class="feature-icon-box">🔒</div>
+          <h3 class="feature-title" data-i18n="feat-anchors-title">Fluid Day Planning & Hard-Anchor Locking</h3>
+          <p class="feature-desc" data-i18n="feat-anchors-desc">
+            Never let fixed flight or restaurant times break your schedule. Lock time-sensitive reservations as Hard Anchors, while flexible POI clusters rebalance dynamically around them.
+          </p>
+        </div>
+
+        <!-- Feature 4: Concierge Pivots -->
+        <div class="feature-card">
+          <div class="feature-icon-box">🛟</div>
+          <h3 class="feature-title" data-i18n="feat-concierge-title">In-Trip Concierge & Dynamic Pivots</h3>
+          <p class="feature-desc" data-i18n="feat-concierge-desc">
+            Traveling is unpredictable. Tap 'Rain Pivot' to instantly replace outdoor sights with covered arcades or museums, or 'Fatigue Mode' to dial down walking distance without losing the vibe.
+          </p>
+        </div>
+
+        <!-- Feature 5: FindPenguins Handover -->
+        <div class="feature-card">
+          <div class="feature-icon-box">🐧</div>
+          <h3 class="feature-title" data-i18n="feat-export-title">FindPenguins & GPX/KML Handover</h3>
+          <p class="feature-desc" data-i18n="feat-export-desc">
+            Preserve your travel memories seamlessly. Export completed itineraries, coordinates, and timestamps directly into standard GPX and KML files ready for FindPenguins photobooks.
+          </p>
+        </div>
+
+        <!-- Feature 6: Privacy & BYOK -->
+        <div class="feature-card">
+          <div class="feature-icon-box">🛡️</div>
+          <h3 class="feature-title" data-i18n="feat-privacy-title">100% Local-First & Model-Agnostic BYOK</h3>
+          <p class="feature-desc" data-i18n="feat-privacy-desc">
+            Zero tracking, zero cloud subscriptions. Keep your trip data privately stored in local IndexedDB. Connect OpenRouter, Claude, DeepSeek, or Gemini using your own API key.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Sandbox Section -->
+  <section id="sandbox" class="sandbox-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" data-i18n="sandbox-badge">Interactive Sandbox</div>
+        <h2 class="section-title" data-i18n="sandbox-title">Test The Platform Directly In Your Browser</h2>
+        <p class="section-subtitle" data-i18n="sandbox-subtitle">
+          Experience how Travel Companion thinks: explore macro-planning archetypes, unlock food dossiers, experiment with locked hard anchors, and trigger real-time concierge pivots.
+        </p>
+      </div>
+
+      <div class="sandbox-card">
+        <!-- Sandbox Tabs -->
+        <div class="sandbox-tabs">
+          <button class="sandbox-tab-btn active" data-tab="macro" data-i18n="sandbox-tab-macro">1. Macro Archetype</button>
+          <button class="sandbox-tab-btn" data-tab="gastro" data-i18n="sandbox-tab-gastro">2. Gastronomy Dossier</button>
+          <button class="sandbox-tab-btn" data-tab="planner" data-i18n="sandbox-tab-planner">3. Hard-Anchor Planner</button>
+          <button class="sandbox-tab-btn" data-tab="concierge" data-i18n="sandbox-tab-concierge">4. On-The-Road Pivots</button>
+          <button class="sandbox-tab-btn" data-tab="export" data-i18n="sandbox-tab-export">5. FindPenguins Handover</button>
+        </div>
+
+        <!-- Tab 1: Macro Archetypes -->
+        <div id="tab-macro" class="sandbox-tab-content active">
+          <div class="sandbox-control-row">
+            <div class="form-group">
+              <label for="sb-select-destination" data-i18n="sb-macro-dest-label">Destination:</label>
+              <select id="sb-select-destination" class="custom-select">
+                <option value="japan" data-i18n="sb-dest-japan">Kyoto & Tokyo, Japan (10 Days)</option>
+                <option value="amalfi" data-i18n="sb-dest-amalfi">Amalfi Coast & Cilento, Italy (7 Days)</option>
+                <option value="iceland" data-i18n="sb-dest-iceland">Iceland Ring Road (8 Days)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="sb-select-pacing" data-i18n="sb-macro-pacing-label">Pacing Archetype:</label>
+              <select id="sb-select-pacing" class="custom-select">
+                <option value="balanced" data-i18n="sb-pace-balanced">Balanced Explorer (Recommended)</option>
+                <option value="relaxed" data-i18n="sb-pace-relaxed">Slow Living & Deep Immersion</option>
+                <option value="sprint" data-i18n="sb-pace-sprint">High-Pacing Highlights Sprint</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="sandbox-blueprint-card">
+            <div class="blueprint-header">
+              <div class="blueprint-title" id="sb-blueprint-duration">10 Days • Balanced Explorer</div>
+              <span class="blueprint-tag">AI Blueprint Ready</span>
+            </div>
+            <div class="blueprint-grid">
+              <div class="blueprint-box">
+                <div class="blueprint-box-title" data-i18n="sb-macro-nights-alloc">Recommended Nights Allocation:</div>
+                <div class="blueprint-box-body" id="sb-blueprint-nights">
+                  Tokyo (4 Nights) • Kyoto (4 Nights) • Osaka (2 Nights)
+                </div>
+              </div>
+
+              <div class="blueprint-box">
+                <div class="blueprint-box-title" data-i18n="sb-macro-lodging-rationale">Strategic Lodging Rationale:</div>
+                <div class="blueprint-box-body" id="sb-blueprint-rationale">
+                  Base in Nakagyo-ku / Sanjo in Kyoto for morning walkability to Gion and Nishiki Market without relying on crowded city buses. In Tokyo, split between Shinjuku for JR Yamanote line access and Yanaka for tranquil old-town vibes.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Gastronomy Dossier -->
+        <div id="tab-gastro" class="sandbox-tab-content">
+          <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;" data-i18n="sb-gastro-subtitle">
+            Authentic local dishes, anti-tourist advice, and unwritten dining etiquette.
+          </p>
+          <div id="sb-gastro-cards-container" class="gastro-grid">
+            <!-- Dynamically populated from JS -->
+          </div>
+        </div>
+
+        <!-- Tab 3: Planner & Hard Anchors -->
+        <div id="tab-planner" class="sandbox-tab-content">
+          <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;" data-i18n="sb-planner-subtitle">
+            Items marked with a lock 🔒 cannot be displaced during schedule adjustments. Flexible activities rearrange around them automatically.
+          </p>
+
+          <div class="planner-actions-bar">
+            <div style="display: flex; gap: 10px;">
+              <button id="btn-toggle-anchor" class="btn btn-secondary btn-sm" data-i18n="sb-planner-btn-toggle">
+                Toggle Anchor Lock
+              </button>
+              <button id="btn-rebalance-schedule" class="btn btn-primary btn-sm" data-i18n="sb-planner-btn-rebalance">
+                Simulate Day Rebalance
+              </button>
+            </div>
+            <div id="planner-toast" class="planner-toast" data-i18n="sb-planner-rebalance-msg">
+              Flexible afternoon items adjusted around your locked 13:00 Kaiseki reservation!
+            </div>
+          </div>
+
+          <div class="mockup-timeline">
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-time">09:00 - 12:00</span>
+                <span style="font-size: 11px; color: var(--text-muted);">Flexible</span>
+              </div>
+              <div class="timeline-title">Fushimi Inari Shrine Hike</div>
+              <div class="timeline-desc">Flexible walking route through cedar woods.</div>
+            </div>
+
+            <div id="planner-lunch-card" class="timeline-card locked">
+              <div class="timeline-meta">
+                <span class="timeline-time">13:00 - 14:30</span>
+                <span class="badge-locked">🔒 LOCKED ANCHOR</span>
+              </div>
+              <div class="timeline-title">Gion Karyo Kaiseki Reservation</div>
+              <div class="timeline-desc">Hard booking anchor — time cannot be changed or shifted.</div>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-time">15:00 - 17:30</span>
+                <span style="font-size: 11px; color: var(--text-muted);">Auto-Shifted Cluster</span>
+              </div>
+              <div class="timeline-title">Kiyomizu-dera & Sannenzaka</div>
+              <div class="timeline-desc">Dynamically scheduled in the afternoon slot following the anchor.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: On-The-Road Concierge Pivots -->
+        <div id="tab-concierge" class="sandbox-tab-content">
+          <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 20px;" data-i18n="sb-concierge-subtitle">
+            Test real-time contextual pivots when conditions change during your trip:
+          </p>
+
+          <div class="concierge-triggers-grid">
+            <button class="concierge-trigger-btn active" data-trigger="rain" data-i18n="sb-btn-rain">
+              🌧️ Sudden Rain Pivot
+            </button>
+            <button class="concierge-trigger-btn" data-trigger="fatigue" data-i18n="sb-btn-fatigue">
+              ⚡ 18,000-Step Fatigue Pivot
+            </button>
+            <button class="concierge-trigger-btn" data-trigger="nearby" data-i18n="sb-btn-nearby">
+              🥢 Eat Authentic Nearby (400m)
+            </button>
+            <button class="concierge-trigger-btn" data-trigger="pill" data-i18n="sb-btn-pill">
+              🏛️ Instant POI Cultural Pill
+            </button>
+          </div>
+
+          <div class="concierge-live-result">
+            <div class="blueprint-header">
+              <div class="blueprint-title" id="concierge-result-title">
+                🌧️ Contextual Pivot: Rain & Weather Shift Activated
+              </div>
+              <span class="blueprint-tag" id="concierge-result-badge">Rain Alternate Routing</span>
+            </div>
+            <p id="concierge-result-text" style="font-size: 14px; color: var(--text-secondary); line-height: 1.6;">
+              Outdoor hike to Kiyomizu hillside replaced. Rerouted to covered Teramachi & Nishiki Art Arcades, followed by an intimate indoor matcha ceremony at an authentic 18th-century Machiya.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tab 5: FindPenguins Handover -->
+        <div id="tab-export" class="sandbox-tab-content">
+          <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;" data-i18n="sb-export-subtitle">
+            Export your entire journey into standardized GPS tracks and waypoints formatted for FindPenguins photobooks, Apple Maps, or Google Earth.
+          </p>
+
+          <div style="display: flex; gap: 10px; margin-bottom: 14px;">
+            <button class="btn btn-secondary btn-sm btn-copy" data-copy-target="gpx-preview-box" data-i18n="sb-export-btn-copy-gpx">
+              Copy GPX XML
+            </button>
+            <button class="btn btn-secondary btn-sm btn-copy" data-copy-target="kml-preview-box" data-i18n="sb-export-btn-copy-kml">
+              Copy KML Placemarks
+            </button>
+          </div>
+
+          <div class="export-code-box" id="gpx-preview-box"></div>
+          <div class="export-code-box" id="kml-preview-box"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLI & MCP Integration Section -->
+  <section id="mcp" class="mcp-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" data-i18n="mcp-badge">Developer & Power User Ready</div>
+        <h2 class="section-title" data-i18n="mcp-title">Native CLI & Built-in Model Context Protocol (MCP)</h2>
+        <p class="section-subtitle" data-i18n="mcp-subtitle">
+          Control your trips from the terminal or connect Travel Companion to Claude Desktop, Cursor, and autonomous AI agents through the embedded MCP server.
+        </p>
+      </div>
+
+      <div class="mcp-box">
+        <div class="mcp-tabs">
+          <button class="mcp-tab-btn active" data-mcp="cli" data-i18n="mcp-cli-tab">Terminal CLI (`travel-cli`)</button>
+          <button class="mcp-tab-btn" data-mcp="server" data-i18n="mcp-server-tab">Claude & Cursor MCP Config</button>
+        </div>
+
+        <div id="mcp-pane-cli" class="mcp-content">
+          <p style="font-size: 14px; color: var(--text-secondary);" data-i18n="mcp-cli-desc">
+            Inspect upcoming itineraries, query nearby recommendations, and export trips directly from your zsh or bash terminal:
+          </p>
+          <div class="terminal-box">
+            <span class="terminal-cmd">travel trip show "Japan Autumn" --day 3 --export gpx</span>
+            <button class="btn-copy">Copy</button>
+          </div>
+          <div class="terminal-box" style="margin-top: 10px;">
+            <span class="terminal-cmd">travel concierge pivot --type rain --destination "Kyoto"</span>
+            <button class="btn-copy">Copy</button>
+          </div>
+        </div>
+
+        <div id="mcp-pane-server" class="mcp-content" style="display: none;">
+          <p style="font-size: 14px; color: var(--text-secondary);" data-i18n="mcp-server-desc">
+            Add Travel Companion as an MCP server to Claude Desktop (`claude_desktop_config.json`) to let AI chat models query your trip plans directly:
+          </p>
+          <div class="terminal-box">
+            <pre class="terminal-cmd" style="font-family: var(--font-mono); font-size: 12px; margin: 0;">{
+  "mcpServers": {
+    "travel": {
+      "command": "node",
+      "args": ["/Applications/Travel Companion.app/Contents/Resources/mcp/server.js"]
+    }
+  }
+}</pre>
+            <button class="btn-copy">Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Side-by-Side Comparison Matrix -->
+  <section id="compare" class="compare-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" data-i18n="compare-badge">Uncompromising Architecture</div>
+        <h2 class="section-title" data-i18n="compare-title">Why Travel Companion?</h2>
+        <p class="section-subtitle" data-i18n="compare-subtitle">
+          See how Travel Companion bridges the critical planning and on-the-road gap that trackers and chatbots leave open.
+        </p>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th data-i18n="col-feature">Feature / Dimension</th>
+              <th class="highlight-col" data-i18n="col-travel">Travel Companion</th>
+              <th data-i18n="col-trackers">Trackers (FindPenguins/Polarsteps)</th>
+              <th data-i18n="col-llm">Generic Chat LLMs (ChatGPT)</th>
+              <th data-i18n="col-binders">Static Binders (TripIt/Wanderlog)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong data-i18n="comp-macro">Macro-Planning & Lodging Rationale</strong></td>
+              <td class="highlight-col"><span data-i18n="comp-macro-t">✨ AI-generated pacing & neighborhood rationales</span></td>
+              <td><span data-i18n="comp-macro-p">❌ Zero planning (strictly a photo log)</span></td>
+              <td><span data-i18n="comp-macro-c">⚠️ Unstructured text without geography checks</span></td>
+              <td><span data-i18n="comp-macro-b">❌ Manual entry only</span></td>
+            </tr>
+            <tr>
+              <td><strong data-i18n="comp-gastro">Dish-First Gastronomic Intelligence</strong></td>
+              <td class="highlight-col"><span data-i18n="comp-gastro-t">🍜 Native regional dish registries & etiquette tips</span></td>
+              <td><span data-i18n="comp-gastro-p">❌ None</span></td>
+              <td><span data-i18n="comp-gastro-c">⚠️ Hallucinates out-of-season or generic dishes</span></td>
+              <td><span data-i18n="comp-gastro-b">❌ Yelp/Tripadvisor links only</span></td>
+            </tr>
+            <tr>
+              <td><strong data-i18n="comp-anchors">Fluid Daily Slots + Hard-Anchor Locking</strong></td>
+              <td class="highlight-col"><span data-i18n="comp-anchors-t">🔒 Dynamic rebalancing around locked bookings</span></td>
+              <td><span data-i18n="comp-anchors-p">❌ No daily schedule</span></td>
+              <td><span data-i18n="comp-anchors-c">❌ Rigid or unformatted text lists</span></td>
+              <td><span data-i18n="comp-anchors-b">⚠️ Rigid calendars with manual drag-and-drop</span></td>
+            </tr>
+            <tr>
+              <td><strong data-i18n="comp-pivots">In-Trip Concierge (Rain / Fatigue Pivots)</strong></td>
+              <td class="highlight-col"><span data-i18n="comp-pivots-t">🛟 1-Click live pivots & bite-sized cultural pills</span></td>
+              <td><span data-i18n="comp-pivots-p">❌ None</span></td>
+              <td><span data-i18n="comp-pivots-c">⚠️ Requires manual prompting with slow mobile typing</span></td>
+              <td><span data-i18n="comp-pivots-b">❌ None</span></td>
+            </tr>
+            <tr>
+              <td><strong data-i18n="comp-handover">FindPenguins Export (GPX / KML)</strong></td>
+              <td class="highlight-col"><span data-i18n="comp-handover-t">🐧 Native 1-click GPX/KML geocoded export</span></td>
+              <td><span data-i18n="comp-handover-p">Native (Internal only)</span></td>
+              <td><span data-i18n="comp-handover-c">❌ Cannot generate valid geocoded track files</span></td>
+              <td><span data-i18n="comp-handover-b">⚠️ Paid subscription required for exports</span></td>
+            </tr>
+            <tr>
+              <td><strong data-i18n="comp-offline">100% Offline & Local-First Storage</strong></td>
+              <td class="highlight-col"><span data-i18n="comp-offline-t">🛡️ IndexedDB local-first, zero telemetry</span></td>
+              <td><span data-i18n="comp-offline-p">⚠️ Syncs photos to remote cloud servers</span></td>
+              <td><span data-i18n="comp-offline-c">❌ Requires active cellular roaming data</span></td>
+              <td><span data-i18n="comp-offline-b">⚠️ Cloud-first sync, offline locked behind paywall</span></td>
+            </tr>
+            <tr>
+              <td><strong data-i18n="comp-ai">Model-Agnostic BYOK (Claude, DeepSeek, Gemini)</strong></td>
+              <td class="highlight-col"><span data-i18n="comp-ai-t">🔌 OpenRouter BYOK, zero markups, native MCP server</span></td>
+              <td><span data-i18n="comp-ai-p">❌ No AI intelligence</span></td>
+              <td><span data-i18n="comp-ai-c">🔒 Vendor locked subscription ($20/month)</span></td>
+              <td><span data-i18n="comp-ai-b">❌ No AI or proprietary locked models</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Installation Guide Section -->
+  <section id="install" class="install-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" data-i18n="install-badge">Fast & Frictionless</div>
+        <h2 class="section-title" data-i18n="install-title">Get Started in Seconds</h2>
+        <p class="section-subtitle" data-i18n="install-subtitle">
+          Travel Companion is distributed as a lightweight, notarizable macOS universal application.
+        </p>
+      </div>
+
+      <div class="install-grid">
+        <!-- Step 1 -->
+        <div class="install-card">
+          <div class="install-step-header">
+            <span class="install-step-num">1</span>
+            <h3 class="install-step-title" data-i18n="install-step1-title">1. Download the DMG Archive</h3>
+          </div>
+          <p class="install-step-desc" data-i18n="install-step1-desc">
+            Grab the latest build for Apple Silicon (M1/M2/M3/M4) or Intel processors (~15 MB).
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="install-card">
+          <div class="install-step-header">
+            <span class="install-step-num">2</span>
+            <h3 class="install-step-title" data-i18n="install-step2-title">2. Drag to Applications Folder</h3>
+          </div>
+          <p class="install-step-desc" data-i18n="install-step2-desc">
+            Mount the DMG disk image and drag the Travel Companion icon into your /Applications directory.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="install-card" style="grid-column: 1 / -1;">
+          <div class="install-step-header">
+            <span class="install-step-num">3</span>
+            <h3 class="install-step-title" data-i18n="install-step3-title">3. Allow First Launch (macOS Gatekeeper)</h3>
+          </div>
+          <p class="install-step-desc" data-i18n="install-step3-desc">
+            As an independently compiled open-source binary, run this one-line terminal command if Gatekeeper prompts:
+          </p>
+          <div class="terminal-box">
+            <span class="terminal-cmd">xattr -cr "/Applications/Travel Companion.app"</span>
+            <button class="btn-copy">
+              <span data-i18n="install-btn-copy">Copy Command</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="install-card" style="grid-column: 1 / -1;">
+          <div class="install-step-header">
+            <span class="install-step-num">4</span>
+            <h3 class="install-step-title" data-i18n="install-step4-title">4. Add Your OpenRouter or AI API Key (Optional)</h3>
+          </div>
+          <p class="install-step-desc" data-i18n="install-step4-desc">
+            Bring your own key for OpenRouter, DeepSeek, Claude, or Gemini to unlock dynamic generation. Local templates work out-of-the-box offline without any key.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" data-i18n="faq-badge">Common Questions</div>
+        <h2 class="section-title" data-i18n="faq-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle" data-i18n="faq-subtitle">
+          Everything you need to know about privacy, offline support, AI keys, and FindPenguins.
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <!-- FAQ 1 -->
+        <div class="faq-item active">
+          <div class="faq-item-header">
+            <h3 class="faq-question" data-i18n="faq-q1">Why not just use FindPenguins or Polarsteps directly?</h3>
+            <span class="faq-toggle-icon">−</span>
+          </div>
+          <div class="faq-answer" data-i18n="faq-a1">
+            FindPenguins and Polarsteps are outstanding tools for passive GPS tracking and printing beautiful memory photobooks after you return. However, they provide zero intelligence for the hardest parts of traveling: deciding pacing, allocating nights, discovering authentic local food, scheduling around locked bookings, or pivoting when it suddenly pours rain. Travel Companion is the intelligent brain before and during the trip, and delivers your itinerary cleanly into FindPenguins with zero manual data entry.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <div class="faq-item-header">
+            <h3 class="faq-question" data-i18n="faq-q2">Do I need a continuous internet connection while traveling abroad?</h3>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-answer" data-i18n="faq-a2">
+            No! Travel Companion is architected local-first. Once you generate or import your trip plan, all daily schedules, cultural POI pills, offline restaurant dossiers, and geocoded coordinates are cached locally in your browser/desktop storage. You can browse your complete itinerary in airplane mode or in remote mountain areas without international roaming.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <div class="faq-item-header">
+            <h3 class="faq-question" data-i18n="faq-q3">What is a 'Hard Anchor' and why does it matter?</h3>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-answer" data-i18n="faq-a3">
+            Most trips include 1 or 2 immovable events per day — such as a 13:00 museum entry, a booked train departure, or a Michelin-starred dinner reservation. When plans change, rigid apps break and generic LLMs forget the time constraint. In Travel Companion, you lock these as 'Hard Anchors'. All fluid POIs and coffee stops rearrange smoothly around your fixed commitments without ever displacing them.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <div class="faq-item-header">
+            <h3 class="faq-question" data-i18n="faq-q4">Which AI models can I use, and does it cost money?</h3>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-answer" data-i18n="faq-a4">
+            Travel Companion is 100% free, open-source software with Bring-Your-Own-Key (BYOK) architecture. You can connect OpenRouter to access DeepSeek V3/R1, Claude 3.5 Sonnet, Google Gemini 2.0 Flash, or Llama 3. Pay pennies directly to the model provider for only the tokens you consume — no monthly $20 subscriptions or hidden markups.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <div class="faq-item-header">
+            <h3 class="faq-question" data-i18n="faq-q5">How does the Model Context Protocol (MCP) integration work?</h3>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-answer" data-i18n="faq-a5">
+            Travel Companion includes a built-in MCP server (`travel-mcp`). By configuring your `claude_desktop_config.json` or Cursor editor, external AI assistants can query your upcoming trips, search your food dossier, or check today's locked anchors as native tool calls directly in your conversation.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Banner -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-card">
+        <div class="section-badge" data-i18n="cta-badge">Elevate Your Journeys</div>
+        <h2 class="cta-title" data-i18n="cta-title">Ready to Plan Trips Like a Local?</h2>
+        <p class="cta-subtitle" data-i18n="cta-subtitle">
+          Download Travel Companion for macOS and experience travel planning without spreadsheets, tourist traps, or cloud lock-in.
+        </p>
+        <div class="cta-actions">
+          <a id="cta-download-btn" href="https://github.com/vittoriom/travel/releases/latest" class="btn btn-primary btn-lg" data-i18n="cta-download">
+            Download DMG for macOS
+          </a>
+          <a href="https://github.com/vittoriom/travel" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg" data-i18n="cta-source">
+            Explore on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-title">
+            <img src="assets/logo.png" alt="Travel Companion Logo" width="28" height="28" style="border-radius: 6px;">
+            <span data-i18n="footer-brand">Travel Companion</span>
+          </div>
+          <p class="footer-desc" data-i18n="footer-desc">
+            Client-side intelligence platform for smart travel planning, gastronomy dossiers, on-the-road concierges, and FindPenguins handover.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer-links-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#features" data-i18n="nav-features">Features</a></li>
+            <li><a href="#sandbox" data-i18n="nav-sandbox">Live Demo</a></li>
+            <li><a href="#mcp" data-i18n="nav-mcp">CLI & MCP</a></li>
+            <li><a href="#compare" data-i18n="nav-compare">Compare</a></li>
+            <li><a href="#install" data-i18n="nav-install">Install Guide</a></li>
+            <li><a href="#faq" data-i18n="nav-faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer-tech-title">Technology</h4>
+          <ul class="footer-links">
+            <li><a href="https://tauri.app" target="_blank" rel="noopener noreferrer">Tauri v2</a></li>
+            <li><a href="https://react.dev" target="_blank" rel="noopener noreferrer">React 19 & Vite 8</a></li>
+            <li><a href="https://modelcontextprotocol.io" target="_blank" rel="noopener noreferrer">Model Context Protocol</a></li>
+            <li><a href="https://findpenguins.com" target="_blank" rel="noopener noreferrer">FindPenguins Integration</a></li>
+            <li><a href="https://github.com/vittoriom/travel" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer-legal">MIT License © 2026 Vittorio Monaco. Made for mindful travelers.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="translations.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
