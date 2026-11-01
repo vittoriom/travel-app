@@ -5,13 +5,9 @@ Official landing page and showcase website for **[Travel Companion](https://gith
 ## Features
 
 - **Zero-Dependency Architecture**: Lightweight static website with no build step required. Open `index.html` directly in any modern browser or host via GitHub Pages, Vercel, or Cloudflare Pages.
-- **Interactive Travel Lifecycle Sandbox**: Live in-browser demonstration of:
-  - **Macro-Planning**: AI archetype selection (Balanced, Relaxed, Sprint), nights allocation, and lodging rationales.
-  - **Dish-First Gastronomy Dossier**: Authentic regional dishes, local dining etiquette, and anti-tourist advice.
-  - **Fluid Daily Scheduler**: 4-slot day structure (Morning, Lunch, Afternoon, Evening) with interactive **Hard-Anchor** locking (fixed reservations that cannot be moved).
-  - **On-the-Road Concierge Pivots**: Real-time simulation of **Rain Pivots**, **Fatigue Modes**, **Eat Nearby**, and **POI Cultural Pills**.
-  - **FindPenguins Handover**: Interactive GPX track and KML placemark generation ready for 1-click export.
-- **CLI & MCP Server Showcase**: Native CLI usage and Claude Desktop / Cursor Model Context Protocol (`mcp`) configuration snippets.
+- **Museum-Grade AI Audioguides**: Spoken voice narration player simulation with architectural secrets, historical lore, notable artworks, and playback speed controls.
+- **Trip Lifecycle Showcase**: Highlights macro-planning archetypes, dish-first regional food dossiers, fluid daily scheduling with locked hard anchors, dynamic rain/fatigue pivots, and one-click FindPenguins GPX/KML export.
+- **Native CLI & MCP Ready**: Mentions embedded terminal CLI commands (`travel-cli`) and Model Context Protocol (`mcp`) integration for Claude Desktop and Cursor.
 - **Bilingual Localization (EN / IT)**: Full English and Italian translations with automated browser language detection and instant client-side toggle.
 - **Dark & Light Mode**: macOS-aligned dark and light theme toggle with persistent state in `localStorage`.
 - **GitHub Release Integration**: Live fetching of the latest `.dmg` release binary asset, tag version, and file size via GitHub REST API.
