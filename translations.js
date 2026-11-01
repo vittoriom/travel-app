@@ -1,6 +1,6 @@
 window.translations = {
   en: {
-    "meta-desc": "Travel Companion — Local-first AI travel platform with museum-grade audioguides, macro-planning, dish-first regional food dossiers, hard-anchor scheduling, and seamless FindPenguins export.",
+    "meta-desc": "Travel Companion — Local-first AI travel platform with museum-grade audioguides, macro-planning, dish-first regional food dossiers, smart scheduling, and seamless FindPenguins export.",
     "meta-title": "Travel Companion — Intelligent Travel Planning, Audioguides & Concierge",
 
     /* Navigation */
@@ -12,9 +12,9 @@ window.translations = {
     "nav-download": "Download DMG",
 
     /* Hero */
-    "hero-badge": "🧭 100% Local-First • Museum-Grade Audioguides • FindPenguins Handover",
+    "hero-badge": "🧭 100% Local-First • AI Trip Planning • Museum Audioguides • FindPenguins Handover",
     "hero-title": "Intelligent Travel Planning, Audioguides & Concierge.<br><span class=\"gradient-text\">From Inspiration to On-The-Road Execution.</span>",
-    "hero-subtitle": "Turn any journey into an extraordinary experience. AI macro-planning, museum-grade spoken audioguides with architectural secrets, dish-first gastronomy, fluid schedules with locked hard anchors, dynamic rain/fatigue pivots, and one-click FindPenguins GPX/KML export.",
+    "hero-subtitle": "Turn any journey into an extraordinary experience. AI macro-planning, museum-grade spoken audioguides with architectural secrets, dish-first gastronomy, intuitive daily itineraries, dynamic rain/fatigue pivots, and one-click FindPenguins GPX/KML export.",
     "hero-download": "Download for macOS",
     "hero-explore": "Explore Capabilities",
     "hero-version": "Latest Release: v0.2.0 • macOS 13+ (Universal Apple Silicon & Intel)",
@@ -29,36 +29,22 @@ window.translations = {
     "stat-mcp": "Native CLI & MCP",
     "stat-mcp-sub": "Claude & Cursor AI ready",
 
-    /* Mockup Window */
-    "mockup-title": "Travel Companion — Japan Autumn Odyssey (Tokyo • Kyoto • Osaka)",
-    "mockup-badge-active": "Trip Active",
-    "mockup-nav-trips": "MY TRIPS",
-    "mockup-trip-1": "Japan Autumn Odyssey",
-    "mockup-trip-2": "Amalfi & Cilento Coast",
-    "mockup-trip-3": "Iceland Ring Road",
-    "mockup-nav-phases": "LIFECYCLE PHASES",
-    "mockup-phase-1": "1. Macro-Planning",
-    "mockup-phase-2": "2. Culture & Gastronomy",
-    "mockup-phase-3": "3. Daily Itinerary",
-    "mockup-phase-4": "4. On-The-Road Concierge",
-    "mockup-phase-5": "5. FindPenguins Export",
-    "mockup-day-selector": "Day 3: Kyoto Cultural Heart & Gion",
-    "mockup-slot-morning": "Morning • 09:00 - 12:30",
-    "mockup-slot-morning-title": "Fushimi Inari Taisha (Upper Mountain Path)",
-    "mockup-slot-morning-desc": "Early climb through the Senbon Torii before tour buses arrive. Peaceful side shrine paths and cedar forest views.",
-    "mockup-audio-title": "🎧 Spoken Audioguide: The Mountain of 10,000 Vermilion Gates",
-    "mockup-audio-narration": "“Step past the main Romon gate into the quiet tunnel of tenons. Each gate was dedicated by merchants seeking prosperity since 711 AD...”",
-    "mockup-slot-lunch": "Lunch • 13:00 - 14:30",
-    "mockup-slot-lunch-title": "Gion Karyo — Traditional Kaiseki Lunch",
-    "mockup-slot-lunch-desc": "Multi-course seasonal Kyoto ryori. Counter seating overlooking the private moss garden. Confirmed table reservation.",
-    "mockup-anchor-locked": "LOCKED ANCHOR",
-    "mockup-slot-afternoon": "Afternoon • 15:00 - 18:00",
-    "mockup-slot-afternoon-title": "Kiyomizu-dera & Sannenzaka Historic District",
-    "mockup-slot-afternoon-desc": "Wooden stage overlooking maple canopy, followed by pottery shopping along preserved stone stairways.",
-    "mockup-drawer-title": "Concierge On-The-Road",
-    "mockup-drawer-badge": "Rain Pivot Ready",
-    "mockup-drawer-pill-title": "🏛️ Architectural Secret: Kigumi Joinery",
-    "mockup-drawer-pill-desc": "Kiyomizu-dera's veranda stands 13 meters high constructed entirely without a single nail, interlocking zelkova timber beams.",
+    /* Features Section */
+    "features-badge": "Engineered for Travellers",
+    "features-title": "Bridging The Entire Travel Decision Lifecycle",
+    "features-subtitle": "Most apps leave you alone when planning or trap you in rigid spreadsheets. Travel Companion guides you from the very first spark to the final footprint export.",
+    "feat-macro-title": "Macro-Planning & Pacing Archetypes",
+    "feat-macro-desc": "Input any destination and get 2-5 distinct travel archetypes with strategic duration, base lodging rationales, and neighborhood logistics calculated around realistic walking speeds.",
+    "feat-gastro-title": "Dish-First Gastronomy & Culture Dossier",
+    "feat-gastro-desc": "Avoid tourist traps with authentic regional dish registries. Learn what to order, unwritten restaurant customs, peak-hour reservation tactics, and local etiquette before you arrive.",
+    "feat-anchors-title": "Smart Daily Scheduling & Time Clusters",
+    "feat-anchors-desc": "Organize your days into intuitive morning, lunch, afternoon, and evening clusters with transit optimization and flexible scheduling that respects your fixed bookings.",
+    "feat-concierge-title": "In-Trip Concierge & Dynamic Pivots",
+    "feat-concierge-desc": "Traveling is unpredictable. Tap 'Rain Pivot' to instantly replace outdoor sights with covered arcades or museums, or 'Fatigue Mode' to dial down walking distance without losing the vibe.",
+    "feat-export-title": "FindPenguins & GPX/KML Handover",
+    "feat-export-desc": "Preserve your travel memories seamlessly. Export completed itineraries, coordinates, and timestamps directly into standard GPX and KML files ready for FindPenguins photobooks.",
+    "feat-privacy-title": "Local-First Privacy, Native CLI & MCP",
+    "feat-privacy-desc": "100% Local-First storage in IndexedDB with zero telemetry. Control your trips via terminal CLI or connect Claude Desktop and Cursor agents via the built-in MCP server.",
 
     /* Audioguide Spotlight Section */
     "audio-badge": "Deep Cultural Immersion",
@@ -72,23 +58,6 @@ window.translations = {
     "audio-feature-3-desc": "Get curated checklists of key artworks and photographic vantage points inside major temples, museums, and historical districts.",
     "audio-feature-4-title": "100% Offline Playback",
     "audio-feature-4-desc": "All generated audioguide scripts, metadata, and speech synthesis run offline on your device, requiring zero cellular data while roaming abroad.",
-
-    /* Features Section */
-    "features-badge": "Engineered for Travellers",
-    "features-title": "Bridging The Entire Travel Decision Lifecycle",
-    "features-subtitle": "Most apps leave you alone when planning or trap you in rigid spreadsheets. Travel Companion guides you from the very first spark to the final footprint export.",
-    "feat-macro-title": "Macro-Planning & Pacing Archetypes",
-    "feat-macro-desc": "Input any destination and get 2-5 distinct travel archetypes with strategic duration, base lodging rationales, and neighborhood logistics calculated around realistic walking speeds.",
-    "feat-gastro-title": "Dish-First Gastronomy & Culture Dossier",
-    "feat-gastro-desc": "Avoid tourist traps with authentic regional dish registries. Learn what to order, unwritten restaurant customs, peak-hour reservation tactics, and local etiquette before you arrive.",
-    "feat-anchors-title": "Fluid Day Planning & Hard-Anchor Locking",
-    "feat-anchors-desc": "Never let fixed flight or dinner times break your schedule. Lock time-sensitive reservations as Hard Anchors, while flexible POI clusters rebalance dynamically around them.",
-    "feat-concierge-title": "In-Trip Concierge & Dynamic Pivots",
-    "feat-concierge-desc": "Traveling is unpredictable. Tap 'Rain Pivot' to instantly replace outdoor sights with covered arcades or museums, or 'Fatigue Mode' to dial down walking distance without losing the vibe.",
-    "feat-export-title": "FindPenguins & GPX/KML Handover",
-    "feat-export-desc": "Preserve your travel memories seamlessly. Export completed itineraries, coordinates, and timestamps directly into standard GPX and KML files ready for FindPenguins photobooks.",
-    "feat-privacy-title": "Local-First Privacy, Native CLI & MCP",
-    "feat-privacy-desc": "100% Local-First storage in IndexedDB with zero telemetry. Control your trips via terminal CLI or connect Claude Desktop and Cursor agents via the built-in MCP server.",
 
     /* Comparison Section */
     "compare-badge": "Uncompromising Architecture",
@@ -118,8 +87,8 @@ window.translations = {
     "comp-gastro-c": "⚠️ Hallucinates out-of-season or generic dishes",
     "comp-gastro-b": "❌ Yelp/Tripadvisor links only",
 
-    "comp-anchors": "Fluid Daily Slots + Hard-Anchor Locking",
-    "comp-anchors-t": "🔒 Dynamic rebalancing around locked bookings",
+    "comp-anchors": "Smart Daily Scheduling & Time Clusters",
+    "comp-anchors-t": "✨ Intuitive time clusters with dynamic rebalancing",
     "comp-anchors-p": "❌ No daily schedule",
     "comp-anchors-c": "❌ Rigid or unformatted text lists",
     "comp-anchors-b": "⚠️ Rigid calendars with manual drag-and-drop",
@@ -170,10 +139,17 @@ window.translations = {
     "faq-a2": "FindPenguins and Polarsteps are outstanding tools for passive GPS tracking and printing photobooks after you return. However, they provide zero intelligence for planning: deciding pacing, allocating nights, discovering authentic local food, scheduling around locked bookings, listening to audioguides, or pivoting when it suddenly pours rain. Travel Companion acts as your intelligent brain before and during the trip, and delivers your itinerary cleanly into FindPenguins with zero manual data entry.",
     "faq-q3": "Do I need a continuous internet connection while traveling abroad?",
     "faq-a3": "No! Travel Companion is architected local-first. Once you generate or import your trip plan, all daily schedules, audioguide narrations, cultural lore, restaurant dossiers, and geocoded coordinates are cached locally. You can browse your complete itinerary in airplane mode or in remote mountain areas without international roaming.",
-    "faq-q4": "What is a 'Hard Anchor' and why does it matter?",
-    "faq-a4": "Most trips include 1 or 2 immovable events per day — such as a 13:00 museum entry, a booked train departure, or a Michelin-starred dinner reservation. When plans change, rigid calendar apps break and generic LLMs forget the time constraint. In Travel Companion, you lock these as 'Hard Anchors'. All fluid POIs rearrange smoothly around your fixed commitments without ever displacing them.",
+    "faq-q4": "How does daily schedule planning work with fixed reservations?",
+    "faq-a4": "Travel Companion organizes your days into morning, lunch, afternoon, and evening clusters. If you have a fixed flight, train departure, or dinner reservation, you can lock its time slot; all flexible sightseeing stops rearrange smoothly around your fixed commitments without ever displacing them.",
     "faq-q5": "Can external AI assistants (like Claude or Cursor) access my trips?",
-    "faq-a5": "Yes! Travel Companion includes a built-in Model Context Protocol (MCP) server (`travel-mcp`) and a native CLI (`travel-cli`). By configuring Claude Desktop or Cursor, external AI agents can query your upcoming itineraries, inspect food dossiers, or check today's locked anchors directly via native tool calls.",
+    "faq-a5": "Yes! Travel Companion includes a built-in Model Context Protocol (MCP) server (`travel-mcp`) and a native CLI (`travel-cli`). By configuring Claude Desktop or Cursor, external AI agents can query your upcoming itineraries, inspect food dossiers, or check today's schedule directly via native tool calls.",
+
+    /* Footer & Creator */
+    "footer-creator-title": "About the Developer",
+    "footer-creator-name": "Vittorio Monaco",
+    "footer-creator-role": "Staff Software Engineer @ Databricks",
+    "footer-creator-bio": "Built Travel Companion to bridge the gap between initial inspiration and on-the-road execution. Designed for local-first privacy with museum-grade audioguides, authentic regional food dossiers, dynamic pivots, and seamless FindPenguins exports.",
+    "footer-creator-github": "GitHub Profile",
 
     /* CTA & Footer */
     "cta-badge": "Elevate Your Journeys",
@@ -189,7 +165,7 @@ window.translations = {
   },
 
   it: {
-    "meta-desc": "Travel Companion — Piattaforma AI local-first per la pianificazione viaggi con audioguide museali, macro-planning, gastronomia regionale dish-first, hard anchor e handover FindPenguins.",
+    "meta-desc": "Travel Companion — Piattaforma AI local-first per la pianificazione viaggi con audioguide museali, macro-planning, gastronomia regionale dish-first, pianificazione oraria e handover FindPenguins.",
     "meta-title": "Travel Companion — Pianificazione Viaggi Intelligente, Audioguide & Concierge",
 
     /* Navigation */
@@ -201,9 +177,9 @@ window.translations = {
     "nav-download": "Scarica DMG",
 
     /* Hero */
-    "hero-badge": "🧭 100% Local-First • Audioguide Museali Parlate • Handover FindPenguins",
+    "hero-badge": "🧭 100% Local-First • Pianificazione AI • Audioguide Museali • Handover FindPenguins",
     "hero-title": "Pianificazione Viaggi Intelligente, Audioguide & Concierge.<br><span class=\"gradient-text\">Dall'Ispirazione all'Esecuzione On-The-Road.</span>",
-    "hero-subtitle": "Trasforma ogni viaggio in un'esperienza straordinaria. Macro-planning guidato dall'AI, audioguide vocali di livello museale con segreti architettonici, gastronomia dish-first, programmi fluidi con Hard Anchors bloccati, pivot pioggia/stanchezza ed esportazione 1-click in GPX/KML verso FindPenguins.",
+    "hero-subtitle": "Trasforma ogni viaggio in un'esperienza straordinaria. Macro-planning guidato dall'AI, audioguide vocali di livello museale con segreti architettonici, gastronomia dish-first, itinerari giornalieri fluidi, pivot pioggia/stanchezza ed esportazione 1-click in GPX/KML verso FindPenguins.",
     "hero-download": "Scarica per macOS",
     "hero-explore": "Esplora Funzionalità",
     "hero-version": "Ultima Release: v0.2.0 • macOS 13+ (Apple Silicon & Intel)",
@@ -218,36 +194,22 @@ window.translations = {
     "stat-mcp": "CLI Nativa & MCP",
     "stat-mcp-sub": "Pronto per Claude & Cursor",
 
-    /* Mockup Window */
-    "mockup-title": "Travel Companion — Odissea Autunnale in Giappone (Tokyo • Kyoto • Osaka)",
-    "mockup-badge-active": "Viaggio Attivo",
-    "mockup-nav-trips": "I MIEI VIAGGI",
-    "mockup-trip-1": "Odissea Autunno Giappone",
-    "mockup-trip-2": "Costiera Amalfitana & Cilento",
-    "mockup-trip-3": "Ring Road Islanda",
-    "mockup-nav-phases": "FASI DEL CICLO DI VITA",
-    "mockup-phase-1": "1. Macro-Planning",
-    "mockup-phase-2": "2. Cultura & Gastronomia",
-    "mockup-phase-3": "3. Itinerario Giornaliero",
-    "mockup-phase-4": "4. Concierge On-The-Road",
-    "mockup-phase-5": "5. Esportazione FindPenguins",
-    "mockup-day-selector": "Giorno 3: Cuore Storico di Kyoto & Gion",
-    "mockup-slot-morning": "Mattina • 09:00 - 12:30",
-    "mockup-slot-morning-title": "Fushimi Inari Taisha (Sentiero Superiore)",
-    "mockup-slot-morning-desc": "Salita mattutina tra i Senbon Torii prima dell'arrivo dei bus turistici. Sentieri laterali e foresta di cedri secolari.",
-    "mockup-audio-title": "🎧 Audioguida Parlata: La Montagna delle 10.000 Porte Vermiglie",
-    "mockup-audio-narration": "“Oltrepassa la porta principale Romon ed entra nel silenzio del tunnel sacro. Ogni torii fu dedicato da mercanti in cerca di prosperità a partire dal 711 d.C...”",
-    "mockup-slot-lunch": "Pranzo • 13:00 - 14:30",
-    "mockup-slot-lunch-title": "Gion Karyo — Pranzo Kaiseki Tradizionale",
-    "mockup-slot-lunch-desc": "Menu ryori stagionale di Kyoto. Posti al bancone affacciati sul giardino privato con muschio. Prenotazione confermata.",
-    "mockup-anchor-locked": "HARD ANCHOR BLOCCATO",
-    "mockup-slot-afternoon": "Pomeriggio • 15:00 - 18:00",
-    "mockup-slot-afternoon-title": "Kiyomizu-dera & Distretto Storico di Sannenzaka",
-    "mockup-slot-afternoon-desc": "Piattaforma in legno sopra la volta di aceri rossi, seguita da botteghe di ceramica lungo le scalinate storiche.",
-    "mockup-drawer-title": "Concierge On-The-Road",
-    "mockup-drawer-badge": "Pivot Pioggia Pronto",
-    "mockup-drawer-pill-title": "🏛️ Segreto Architettonico: Incastri Kigumi",
-    "mockup-drawer-pill-desc": "La veranda di Kiyomizu-dera sorge a 13 metri d'altezza costruita interamente senza l'uso di un singolo chiodo, con travi in legno incastrate a secco.",
+    /* Features Section */
+    "features-badge": "Progettato per Viaggiatori",
+    "features-title": "Colma l'Intero Ciclo di Vita Decisionale",
+    "features-subtitle": "Le app tradizionali ti abbandonano in fase di pianificazione o ti costringono su rigidi fogli Excel. Travel Companion ti guida dal primo spunto all'esportazione finale delle orme.",
+    "feat-macro-title": "Macro-Planning & Archetipi di Ritmo",
+    "feat-macro-desc": "Inserisci qualsiasi destinazione per ottenere 2-5 archetipi con allocazione notti motivata, quartieri strategici e logistica calcolata sulla reale camminabilità a piedi.",
+    "feat-gastro-title": "Dossier Gastronomico Dish-First & Cultura",
+    "feat-gastro-desc": "Evita le trappole per turisti con il registro delle specialità regionali autentiche. Scopri cosa ordinare, l'etichetta del posto, gli orari migliori e le regole non scritte.",
+    "feat-anchors-title": "Programmazione Oraria & Fasce del Giorno",
+    "feat-anchors-desc": "Organizza le giornate in fasce intuitive (mattina, pranzo, pomeriggio, sera) con ottimizzazione dei percorsi e orari flessibili che rispettano i tuoi voli o prenotazioni fisse.",
+    "feat-concierge-title": "Concierge On-The-Road & Pivot Dinamici",
+    "feat-concierge-desc": "Sul campo gli imprevisti accadono. Tocca 'Pivot Pioggia' per sostituire all'istante le visite all'aperto con gallerie coperte o musei, o 'Pivot Stanchezza' per ridurre i passi a piedi.",
+    "feat-export-title": "Handover Diretto verso FindPenguins (GPX/KML)",
+    "feat-export-desc": "Conserva i tuoi ricordi senza duplicare il lavoro. Esporta l'itinerario con coordinate e timestamp geocodificati in GPX e KML pronti per i fotolibri di FindPenguins.",
+    "feat-privacy-title": "Privacy Local-First, CLI Nativa & MCP",
+    "feat-privacy-desc": "Archiviazione 100% local-first in IndexedDB senza telemetria. Controlla i tuoi viaggi da terminale con la CLI o connetti Claude Desktop e Cursor tramite il server MCP nativo integrato.",
 
     /* Audioguide Spotlight Section */
     "audio-badge": "Immersione Culturale Profonda",
@@ -261,23 +223,6 @@ window.translations = {
     "audio-feature-3-desc": "Consulta una selezione curata delle opere salienti e dei migliori punti di vista fotografici all'interno di musei, santuari e complessi storici.",
     "audio-feature-4-title": "Riproduzione 100% Offline",
     "audio-feature-4-desc": "Tutti i testi delle audioguide, le informazioni culturali e la sintesi vocale funzionano interamente sul tuo dispositivo offline, senza consumare roaming all'estero.",
-
-    /* Features Section */
-    "features-badge": "Progettato per Viaggiatori",
-    "features-title": "Colma l'Intero Ciclo di Vita Decisionale",
-    "features-subtitle": "Le app tradizionali ti abbandonano in fase di pianificazione o ti costringono su rigidi fogli Excel. Travel Companion ti guida dal primo spunto all'esportazione finale delle orme.",
-    "feat-macro-title": "Macro-Planning & Archetipi di Ritmo",
-    "feat-macro-desc": "Inserisci qualsiasi destinazione per ottenere 2-5 archetipi con allocazione notti motivata, quartieri strategici e logistica calcolata sulla reale camminabilità a piedi.",
-    "feat-gastro-title": "Dossier Gastronomico Dish-First & Cultura",
-    "feat-gastro-desc": "Evita le trappole per turisti con il registro delle specialità regionali autentiche. Scopri cosa ordinare, l'etichetta del posto, gli orari migliori e le regole non scritte.",
-    "feat-anchors-title": "Programma Fluido & Hard Anchors Bloccati",
-    "feat-anchors-desc": "Non lasciare che un orario rigido rovini la giornata. Blocca le prenotazioni orarie (Hard Anchors), mentre le attività flessibili si riequilibrano attorno senza sovrapporsi.",
-    "feat-concierge-title": "Concierge On-The-Road & Pivot Dinamici",
-    "feat-concierge-desc": "Sul campo gli imprevisti accadono. Tocca 'Pivot Pioggia' per sostituire all'istante le visite all'aperto con gallerie coperte o musei, o 'Pivot Stanchezza' per ridurre i passi a piedi.",
-    "feat-export-title": "Handover Diretto verso FindPenguins (GPX/KML)",
-    "feat-export-desc": "Conserva i tuoi ricordi senza duplicare il lavoro. Esporta l'itinerario con coordinate e timestamp geocodificati in GPX e KML pronti per i fotolibri di FindPenguins.",
-    "feat-privacy-title": "Privacy Local-First, CLI Nativa & MCP",
-    "feat-privacy-desc": "Archiviazione 100% local-first in IndexedDB senza telemetria. Controlla i tuoi viaggi da terminale con la CLI o connetti Claude Desktop e Cursor tramite il server MCP nativo integrato.",
 
     /* Comparison Section */
     "compare-badge": "Architettura Senza Compromessi",
@@ -307,8 +252,8 @@ window.translations = {
     "comp-gastro-c": "⚠️ Allucinazioni su piatti fuori stagione o generici",
     "comp-gastro-b": "❌ Solo link esterni Yelp/Tripadvisor",
 
-    "comp-anchors": "Fasce Fluide + Hard Anchors Bloccati",
-    "comp-anchors-t": "🔒 Ribilanciamento dinamico attorno a orari rigidi",
+    "comp-anchors": "Programmazione Oraria & Fasce del Giorno",
+    "comp-anchors-t": "✨ Fasce orarie intuitive con riequilibrio flessibile",
     "comp-anchors-p": "❌ Nessun piano orario",
     "comp-anchors-c": "❌ Liste di testo rigide o disallineate",
     "comp-anchors-b": "⚠️ Calendari rigidi con spostamenti manuali",
@@ -359,10 +304,17 @@ window.translations = {
     "faq-a2": "FindPenguins e Polarsteps sono straordinari per registrare passivamente la traccia GPS e stampare magnifici fotolibri dopo il rientro. Tuttavia, offrono zero aiuto per la pianificazione: decidere il ritmo, scegliere gli alloggi, scovare il cibo autentico regionale, gestire le prenotazioni fisse, ascoltare audioguide o ripianificare quando piove all'improvviso. Travel Companion è il cervello prima e durante il viaggio, e trasferisce l'itinerario a FindPenguins con zero data-entry manuale.",
     "faq-q3": "Serve una connessione internet continua all'estero?",
     "faq-a3": "Assolutamente no! Travel Companion è architettato in modo local-first. Una volta generato o salvato il viaggio, tutti gli orari, le audioguide, le informazioni culturali, i dossier dei ristoranti e le coordinate geocodificate sono salvati nella memoria locale. Puoi consultare l'intero itinerario in modalità aereo o in alta montagna senza roaming dati.",
-    "faq-q4": "Cos'è un 'Hard Anchor' (Ancoraggio Rigido)?",
-    "faq-a4": "Quasi ogni viaggio ha 1 o 2 eventi inderogabili ogni giorno — come un ingresso prenotato al museo alle 13:00, un treno ad alta velocità o una cena Kaiseki con orario fisso. Quando i piani cambiano, le app rigide si rompono e i chatbot generici dimenticano il vincolo. In Travel Companion, puoi bloccare queste attività come 'Hard Anchor'. Tutte le soste flessibili si riordinano armonicamente attorno ad esse senza mai sovrapporsi.",
+    "faq-q4": "Come funziona la pianificazione giornaliera con orari fissi o prenotazioni?",
+    "faq-a4": "Travel Companion organizza le giornate in fasce orarie (mattina, pranzo, pomeriggio, sera). Se hai un volo, un treno o una prenotazione confermata, puoi fissare quell'orario; tutte le altre soste flessibili si riordinano armonicamente attorno ad esso senza mai sovrapporsi.",
     "faq-q5": "Agenti AI esterni (come Claude o Cursor) possono accedere ai miei viaggi?",
-    "faq-a5": "Sì! Travel Companion include un server Model Context Protocol (MCP) nativo (`travel-mcp`) e una CLI da terminale (`travel-cli`). Configurando Claude Desktop o Cursor, agenti AI esterni possono interrogare direttamente i tuoi itinerari futuri, esplorare i dossier gastronomici o verificare gli ancoraggi bloccati tramite tool call native.",
+    "faq-a5": "Sì! Travel Companion include un server Model Context Protocol (MCP) nativo (`travel-mcp`) e una CLI da terminale (`travel-cli`). Configurando Claude Desktop o Cursor, agenti AI esterni possono interrogare direttamente i tuoi itinerari futuri, esplorare i dossier gastronomici o verificare il programma del giorno tramite tool call native.",
+
+    /* Footer & Creator */
+    "footer-creator-title": "Informazioni sullo Sviluppatore",
+    "footer-creator-name": "Vittorio Monaco",
+    "footer-creator-role": "Staff Software Engineer @ Databricks",
+    "footer-creator-bio": "Ha creato Travel Companion per colmare il divario tra la prima idea di viaggio e la realtà sul campo. Progettato con architettura local-first, audioguide vocali museali, dossier gastronomici autentici, pivot dinamici ed esportazione verso FindPenguins.",
+    "footer-creator-github": "Profilo GitHub",
 
     /* CTA & Footer */
     "cta-badge": "Eleva i Tuoi Viaggi",

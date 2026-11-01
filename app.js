@@ -1,6 +1,6 @@
 /* ============================================================
    Travel Companion Landing Page JavaScript
-   i18n + GitHub Release Fetcher + Audio Player Simulation + FAQ
+   i18n + GitHub Release Fetcher + FAQ Accordion + Copy Utility
    ============================================================ */
 
 let currentLang = 'en';
@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initLanguage();
   initReleaseFetcher();
-  initMockupAudioPlayer();
   initFaqAccordion();
   initMobileMenu();
   initCopyButtons();
@@ -127,40 +126,7 @@ function initReleaseFetcher() {
 }
 
 /* ============================================================
-   4. Mockup Audioguide Player Interactive Simulation
-   ============================================================ */
-function initMockupAudioPlayer() {
-  const playBtn = document.getElementById('mockup-audio-play-btn');
-  const bars = document.querySelectorAll('.waveform-bar');
-  let isPlaying = false;
-  let waveInterval = null;
-
-  if (playBtn) {
-    playBtn.addEventListener('click', () => {
-      isPlaying = !isPlaying;
-      playBtn.textContent = isPlaying ? '⏸' : '▶';
-
-      if (isPlaying) {
-        waveInterval = setInterval(() => {
-          bars.forEach(bar => {
-            const h = Math.floor(Math.random() * 12) + 4;
-            bar.style.height = `${h}px`;
-            bar.classList.add('active');
-          });
-        }, 180);
-      } else {
-        clearInterval(waveInterval);
-        bars.forEach((bar, idx) => {
-          bar.style.height = `${(idx % 3 + 1) * 4}px`;
-          bar.classList.remove('active');
-        });
-      }
-    });
-  }
-}
-
-/* ============================================================
-   5. FAQ Accordion
+   4. FAQ Accordion
    ============================================================ */
 function initFaqAccordion() {
   const faqItems = document.querySelectorAll('.faq-item');
@@ -186,7 +152,7 @@ function initFaqAccordion() {
 }
 
 /* ============================================================
-   6. Copy to Clipboard Utility
+   5. Copy to Clipboard Utility
    ============================================================ */
 function initCopyButtons() {
   document.querySelectorAll('.btn-copy').forEach(btn => {
@@ -212,7 +178,7 @@ function initCopyButtons() {
 }
 
 /* ============================================================
-   7. Mobile Navigation Toggle
+   6. Mobile Navigation Toggle
    ============================================================ */
 function initMobileMenu() {
   const toggle = document.getElementById('mobile-menu-toggle');
